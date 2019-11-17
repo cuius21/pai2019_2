@@ -1,0 +1,90 @@
+@background: transparent linear-gradient(180deg, #382930 0%, #47393F 46%, #382930 72%, #7A7074 100%) 0% 0% no-repeat padding-box;
+@zielony: #1A967F;
+
+
+
+
+
+body{
+  height: 100vh;
+  background: @background;
+}
+.sticky-top{ height: 8vh;}
+.formularz{
+  .form-group{
+    display: inline-block;
+    margin: 0;
+    .form-control{
+      background-color: @zielony;
+      border: none;
+      color: #ffffff;
+      border-radius: 1.25rem;
+      padding: 20px;
+    }
+    ::placeholder{ color: #ffffff;}
+  }
+  .btn-primary{
+    background-color: #08745D;
+    border: none;
+    border-radius: 1.25rem;
+    border-color: #fff;
+  &:hover{ background-color: #06523B;}
+  }
+  img{ height: 1.8rem; color: #fff;
+    filter: invert(100%);}
+}
+
+.page-wraper-container{
+  .site-bar{
+    display: block;
+    height: 100%;
+    margin-top: 150px;
+    .logo{
+      background: url("../assets/Logo2.svg") no-repeat center;
+      background-size: contain;
+      height: 545px;
+      display: inline-block;
+    }
+    .register{
+      height: 545px;
+      display: inline-block;
+      float: right;
+      text-align: center;
+      font-style: normal;
+      section{width: 500px;}
+      .form-group{
+        position: relative;
+        margin-bottom: 25px;
+        overflow: hidden;
+        &:last-child{margin-bottom: 0px;}
+        label{position: absolute; left: 2%; top: 20%;
+        .material-icons-name{ font-size: 18px;}}
+        input{
+          width: 100%;
+          display: inline-block;
+          background-color: transparent;
+          border: none;
+          color: #ffffff;
+          border-bottom: 1px solid #999;
+          padding: 6px 30px;
+          font-family: Arial;
+          box-sizing: border-box;
+        }
+        .form-submit{
+          display: inline-block;
+          font-family: Arial;
+          font-weight: bold;
+          background: @zielony;
+          color: #fff;
+          border-bottom: none;
+          width: auto;
+          padding: 15px 39px;
+          margin-top: 25px;
+          cursor: pointer;
+          border-radius: 1.25rem;
+          &:hover{background-color: #06523B;}
+        }
+      }
+    }
+  }
+}
