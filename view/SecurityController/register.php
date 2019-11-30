@@ -9,8 +9,8 @@
     <meta name="keywords" content="Football, Star, App, Classification"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Icon -->
-    <link rel="stylesheet" href="../assets/fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet/less" type="text/css" href="../public/style.less">
+    <link rel="stylesheet" href="../../assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet/less" type="text/css" href="../../public/style.less">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,13 +18,24 @@
 <nav class="navbar sticky-top navbar-light">
     <a class="navbar-brand"></a>
     <div class="formularz">
-        <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@mail.com">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="●●●●●●●">
-        </div>
-        <button type="submit" class="btn btn-primary"><img src="../assets/arrow-right-solid.svg" alt="arrow"></button>
+        <form action="?page=register" method="POST">
+            <div class="messages">
+                <?php
+                if(isset($messages)){
+                    foreach($messages as $message) {
+                        echo $message;
+                    }
+                }
+                ?>
+            </div>
+            <div class="form-group">
+                <input name="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@mail.com">
+            </div>
+            <div class="form-group">
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="●●●●●●●">
+            </div>
+            <button type="submit" class="btn btn-primary"><img src="../../assets/arrow-right-solid.svg" alt="arrow"></button>
+        </form>
     </div>
 </nav>
 <div class="top-bar-container">
@@ -43,7 +54,7 @@
                 <div class="container">
                     <div class="signup-content">
                         <div class="signup-form">
-                            <form method="POST" class="register-form" id="register-form">
+                            <form action="?page=register" method="POST" class="register-form" id="register-form">
                                 <div class="form-group">
                                     <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                     <input type="text" name="name" id="name" placeholder="Your Name">
@@ -61,7 +72,7 @@
                                     <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
                                 </div>
                                 <div class="form-group form-button">
-                                    <input type="submit" name="signup" id="signup" class="form-submit" value="Register">
+                                    <button type="submit" name="signup" id="signup" class="form-submit">Register</button>
                                 </div>
                             </form>
                         </div>
@@ -82,6 +93,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="../public/js/script.js"></script>
+<script src="../../public/js/script.js"></script>
 </body>
 </html>
