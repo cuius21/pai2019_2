@@ -35,165 +35,178 @@ body{
   height: 100vh;
   background: @background;
 }
-.sticky-top{ height: 8vh;}
-.formularz{
-  .form-group{
-    display: inline-block;
-    margin: 0;
-    .form-control{
-      background-color: @zielony;
-      border: none;
-      color: #ffffff;
-      border-radius: 1.25rem;
-      padding: 20px;
-    }
-    ::placeholder{ color: #ffffff;}
+.navbar-expand-lg{
+  background: transparent !important;
+  height: 8vh;
+  border-bottom: 1px solid @zielony;
+  .navbar-brand{
+    background: url("../assets/Logo2.svg") no-repeat left;
+    background-size: contain;
+    height: 7vh;
+    width: 10%;
   }
-  .btn-primary{
-    background-color: #08745D;
+  .navbar-toggler{
     border: none;
-    border-radius: 1.25rem;
-    border-color: #fff;
+    margin-top: -10px;
+  }
+  .navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+  }
+  .mr-auto{
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    > li{
+      padding-right: 20px;
+      > a{ color: #fff !important; font-family: Arial; font-weight: bold;}
+    }
+  }
+  .form-control{
+    background-color: transparent;
+    border: 1px solid @zielony;
+  }
+  .btn-outline-success{
+    background-color: @zielony;
+    color: #fff;
+    border: none;
     &:hover{ background-color: #06523B;}
   }
-  img{ height: 1.8rem; color: #fff;
-    filter: invert(100%);}
-}
-.top-bar-container {
-  display: none;
-  .sign-in {
-    text-align: right;
-    padding-top: 8px;
-    padding-right: 16px;
-    .btn {
-      background-color: @zielony;
-      border-radius: 1.25rem;
-      color: #fff;
-      &:hover{ background-color: #06523B;}
-    }
-  }
-}
-// message
-.messages{
-  color: #fff;
-  padding: 5px;
 }
 .page-wraper-container{
   .site-bar{
     display: block;
     height: 100%;
-    margin-top: 150px;
-    .logo{
-      background: url("../assets/Logo2.svg") no-repeat center;
-      background-size: contain;
-      height: 545px;
+    text-align: center;
+    .column{
+      background-color: @zielony;
       display: inline-block;
-    }
-    .register{
-      height: 545px;
-      display: inline-block;
-      float: right;
-      text-align: center;
-      font-style: normal;
-      section{width: 500px;}
-      .form-group{
-        position: relative;
-        margin-bottom: 25px;
-        overflow: hidden;
-        &:last-child{margin-bottom: 0px;}
-        label{position: absolute; left: 2%; top: 20%;
-          .material-icons-name{ font-size: 18px;}}
-        input{
-          width: 100%;
-          display: inline-block;
-          background-color: transparent;
-          border: none;
-          color: #ffffff;
-          border-bottom: 1px solid #999;
-          padding: 6px 30px;
-          font-family: Arial;
-          box-sizing: border-box;
-        }
-        .form-submit{
-          display: inline-block;
-          font-family: Arial;
-          font-weight: bold;
-          background: @zielony;
-          color: #fff;
-          border: none;
-          width: auto;
-          padding: 15px 39px;
-          margin-top: 25px;
-          cursor: pointer;
-          border-radius: 1.25rem;
-          &:hover{background-color: #06523B;}
-        }
+      min-height: 100px;
+      width: 300px;
+      margin-right: 40px;
+      padding-left: 0;
+      padding-right: 0;
+      &:last-child{margin-right: 0;}
+      .top100{
+        background: url("../assets/ligs/top100.png") no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 75.11px;
       }
-      .social-buttons{
-        margin-top: 20px;
-        .fa{
-          border-radius: 2rem;
-          background: transparent;
-          border: 1px solid @zielony;
-          padding: 18px;
-          &:hover{background: @zielony; color: #fff; list-style-type: none;text-decoration: none;}
-          a:visited{color: #fff;}
-        }
+      .spanish{
+        background: url("../assets/ligs/La_Liga.png") no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 75.11px;
+      }
+      .england{
+        background: url("../assets/ligs/premier.png") no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 75.11px;
       }
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+
+
+@media (min-width: 1200px) {
   .page-wraper-container{
     .site-bar{
-      margin-top: 150px;
-      .logo{
-        height: 300px;
+      display: block;
+      height: 100%;
+      text-align: center;
+      .column{
+        background-color: @zielony;
+        display: inline-block;
+        min-height: 100px;
+        width: 30%;
+        max-width: 576px;
+        margin-right: 20px;
+        &:last-child{margin-right: 0;}
+        .top100{
+          background: url("../assets/ligs/top100.png") no-repeat;
+          background-size: contain;
+          width: 100%;
+          height: 150px;
+        }
+        .spanish{
+          background: url("../assets/ligs/La_Liga.png") no-repeat;
+          background-size: contain;
+          width: 100%;
+          height: 150px;
+        }
+        .england{
+          background: url("../assets/ligs/premier.png") no-repeat;
+          background-size: contain;
+          width: 100%;
+          height: 150px;
+        }
       }
-      .register{
-        height: 300px;
-        section{ width: 100%; }
+    }
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  .page-wraper-container{
+    .site-bar{
+      display: block;
+      height: 100%;
+      text-align: center;
+      .column{
+        background-color: @zielony;
+        display: inline-block;
+        min-height: 100px;
+        width: 30%;
+        margin-right: 10px;
+        &:last-child{margin-right: 0;}
       }
     }
   }
 }
 @media(max-width: 767px) {
-  .sticky-top {
-    display: none;
-  }
-
-  .top-bar-container {
-    display: block;
-  }
-
-  .page-wraper-container {
-    .site-bar {
-      margin-top: 50px;
-
-      .logo {
-        height: 300px;
-        margin-bottom: 50px;
+  .navbar-expand-lg{
+    .navbar-brand{
+      width: 47.8px;
       }
-
-      .register {
-        height: auto;
-        margin-bottom: 40px;
-        section {
-          margin: auto;
+    .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  }
+  .page-wraper-container{
+    .site-bar{
+      display: block;
+      height: 100%;
+      text-align: center;
+      .column{
+        background-color: @zielony;
+        min-height: 100px;
+        width: 90%;
+        margin-right: 0;
+        .top100{
+          background: url("../assets/ligs/top100.png") no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 100%;
+          height: 75.11px;
+        }
+        .spanish{
+          background: url("../assets/ligs/La_Liga.png") no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 100%;
+          height: 75.11px;
+        }
+        .england{
+          background: url("../assets/ligs/premier.png") no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 100%;
+          height: 75.11px;
         }
       }
     }
   }
+
 }
 @media (max-width: 576px) {
-  .page-wraper-container {
-    .site-bar {
-      .register {
-        section {
-          width: 100%;
-        }
-      }
-    }
-  }
 }
