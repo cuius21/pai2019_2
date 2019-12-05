@@ -54,13 +54,13 @@
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t8" href="#"></a><div id="team_name">Valencia</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t9" href="#"></a><div id="team_name">Sevilla</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t10" href="#"></a><div id="team_name">Real Sociedad</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t11" href="#"></a><div id="team_name">Arsenal London</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t12" href="#"></a><div id="team_name">Chelsea London</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t11" href="#"></a><div id="team_name">Arsenal FC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t12" href="#"></a><div id="team_name">Chelsea FC</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t13" href="#"></a><div id="team_name">Manchester United</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t14" href="#"></a><div id="team_name">Manchester City</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t15" href="#"></a><div id="team_name">Liverpool FC</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t16" href="#"></a><div id="team_name">Tottenham Hotspur</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t17" href="#"></a><div id="team_name">Bayern Munich</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t17" href="#"></a><div id="team_name">Bayern Munchen</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t18" href="#"></a><div id="team_name">Borussia Dortmund</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t19" href="#"></a><div id="team_name">AC Milan</div></div>
         <div class="col-12 col-md-4 col-lg-2  block"><a class="t20" href="#"></a><div id="team_name">FC Internazionale Milano</div></div>
