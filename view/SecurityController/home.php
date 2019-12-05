@@ -16,7 +16,7 @@
 <body>
 <!--HEADER -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="home.php"></a>
+    <a class="navbar-brand" href="http://localhost:8000/?page=home"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,7 +26,7 @@
                 <a class="nav-link" href="#">TOP 100 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">TEAM</a>
+                <a class="nav-link" href="http://localhost:8000/?page=team">TEAM</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">PLAYER</a>
@@ -44,23 +44,35 @@
 <!--CONTENT -->
 <div class="page-wraper-container">
     <div class="flex site-bar">
-        <div class="col-12 col-md-4 column">
+        <div class="col-12 col-md-4 column-top100">
             <div class="top100"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
+            <div class="cards" id="c0"></div>
+            <div class="cards" id="c1"></div>
+            <div class="cards" id="c2"></div>
+            <div class="cards" id="c9"></div>
+            <div class="cards" id="c10"></div>
+            <div class="cards" id="c11"></div>
+            <div class="cards" id="c18"></div>
+            <div class="cards" id="c19"></div>
+            <div class="cards" id="c20"></div>
         </div>
-        <div class="col-12 col-md-4 column">
+        <div class="col-12 col-md-4 column-laliga">
             <div class="spanish"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
+            <div class="cards" id="c3"></div>
+            <div class="cards" id="c4"></div>
+            <div class="cards" id="c5"></div>
+            <div class="cards" id="c12"></div>
+            <div class="cards" id="c13"></div>
+            <div class="cards" id="c14"></div>
         </div>
-        <div class="col-12 col-md-4 column">
+        <div class="col-12 col-md-4 column-premier">
             <div class="england"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
+            <div class="cards" id="c6"></div>
+            <div class="cards" id="c7"></div>
+            <div class="cards" id="c8"></div>
+            <div class="cards" id="c15"></div>
+            <div class="cards" id="c16"></div>
+            <div class="cards" id="c17"></div>
         </div>
     </div>
 </div>

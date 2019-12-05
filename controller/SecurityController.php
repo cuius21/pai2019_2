@@ -27,4 +27,7 @@ class SecurityController extends AppController{
     public function home(){
         $this->render('home');
     }
+    public function team(){
+        $this->render('team');
+    }
 }

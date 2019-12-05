@@ -16,6 +16,10 @@ class Routing{
             'home' =>[
                  'controller' => 'SecurityController',
                  'action' => 'home'
+            ],
+            'team' =>[
+                'controller' => 'SecurityController',
+                'action' => 'team'
             ]
         ];
     }
