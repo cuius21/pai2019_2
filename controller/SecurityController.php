@@ -30,4 +30,10 @@ class SecurityController extends AppController{
     public function team(){
         $this->render('team');
     }
+    public function player(){
+        $this->render('player');
+    }
+    public function rating(){
+        $this->render('rating');
+    }
 }

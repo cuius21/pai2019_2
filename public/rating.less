@@ -1,0 +1,104 @@
+@background: transparent linear-gradient(180deg, #382930 0%, #47393F 46%, #382930 72%, #7A7074 100%) 0% 0% no-repeat padding-box;
+@zielony: #1A967F;
+
+//Social Buttons
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+//
+
+
+body{
+  height: 100%;
+  background: @background;
+}
+.navbar-expand-lg{
+  background: transparent !important;
+  height: 8vh;
+  border-bottom: 1px solid @zielony;
+  .navbar-brand{
+    background: url("../assets/Logo2.svg") no-repeat left;
+    background-size: contain;
+    height: 7vh;
+    width: 10%;
+  }
+  .navbar-toggler{
+    border: none;
+    margin-top: -10px;
+  }
+  .navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+  }
+  .mr-auto{
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    > li{
+      padding-right: 20px;
+      > a{ color: #fff !important; font-family: Arial; font-weight: bold; &:hover{color: @zielony !important;}}
+    }
+  }
+  .form-control{
+    background-color: transparent;
+    border: 1px solid @zielony;
+  }
+  .btn-outline-success{
+    background-color: @zielony;
+    color: #fff;
+    border: none;
+    &:hover{ background-color: #06523B;}
+  }
+}
+.page-wraper-container{
+  width: 100%;
+  .site-bar {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .page-wraper-container{
+    .site-bar{
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  .col-md-4{
+    max-width: 32.333333%;
+  }
+}
+@media(max-width: 767px) {
+  .navbar-expand-lg{
+    .navbar-brand{
+      width: 47.8px;
+    }
+    .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  }
+
+}
+@media (max-width: 576px) {
+}
