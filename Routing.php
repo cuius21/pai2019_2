@@ -20,6 +20,14 @@ class Routing{
             'team' =>[
                 'controller' => 'SecurityController',
                 'action' => 'team'
+            ],
+            'player' =>[
+                'controller' => 'SecurityController',
+                'action' => 'player'
+            ],
+            'rating' =>[
+                'controller' => 'SecurityController',
+                'action' => 'rating'
             ]
         ];
     }

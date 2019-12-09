@@ -29,7 +29,7 @@
                 <a class="nav-link" href="http://localhost:8000/?page=team">TEAM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">PLAYER</a>
+                <a class="nav-link" href="http://localhost:8000/?page=player">PLAYER</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">SETTINGS</a>
