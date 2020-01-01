@@ -8,11 +8,15 @@ class Routing{
     public function __construct(){
         $this->routes=[
           'register' => [
-            'controller' => 'SecurityController',
-            'action' => 'login'],
+                'controller' => 'SecurityController',
+                'action' => 'register'],
            'login' => [
                 'controller' => 'SecurityController',
                 'action' => 'login'],
+            'logout' =>[
+                'controller' => 'SecurityController',
+                'action' => 'logout'
+            ],
             'home' =>[
                  'controller' => 'SecurityController',
                  'action' => 'home'
@@ -24,6 +28,10 @@ class Routing{
             'player' =>[
                 'controller' => 'SecurityController',
                 'action' => 'player'
+            ],
+            'settings' => [
+                'controller' => 'SecurityController',
+                'action' => 'settings'
             ],
             'rating' =>[
                 'controller' => 'SecurityController',

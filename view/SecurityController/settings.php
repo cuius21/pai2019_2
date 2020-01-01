@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Icon -->
     <link rel="stylesheet" href="../../assets/fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet/less" type="text/css" href="../../public/rating.less">
+    <link rel="stylesheet/less" type="text/css" href="../../public/settings.less">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
                 <a class="nav-link" href="http://localhost:8000/?page=player">PLAYER</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8000/?page=settings">SETTINGS</a>
+                <a class="nav-link" href="#">SETTINGS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?page=logout">LOG OUT</a>
@@ -47,6 +47,8 @@
 <!--CONTENT -->
 <div class="page-wraper-container">
     <div class="flex site-bar">
+        <div class="col-12 col-md-6 profile1"></div>
+        <div class="col-12 col-md-6 profile2"></div>
     </div>
 </div>
 

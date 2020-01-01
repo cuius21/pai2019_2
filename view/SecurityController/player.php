@@ -32,7 +32,10 @@
                 <a class="nav-link" href="#">PLAYER</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">SETTINGS</a>
+                <a class="nav-link" href="http://localhost:8000/?page=settings">SETTINGS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=logout">LOG OUT</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
