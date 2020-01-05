@@ -68,7 +68,7 @@ class SecurityController extends AppController{
                 return $this->render('register', ['messages' => ['This email has already been used!']]);
             }
             //ADD USER TO DATABASE
-            $mapper->addUser($_POST['name'], $_POST['surname'], $_POST['email'], md5($_POST['password']));
+            $mapper->addUser($_POST['name'], $_POST['surname'], $_POST['email'], ($_POST['password']));
             return $this->render('home', ['messages' => ['Your account has been registered!']]);
         }
         $this->render('register');
