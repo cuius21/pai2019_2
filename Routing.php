@@ -36,6 +36,10 @@ class Routing{
             'rating' =>[
                 'controller' => 'SecurityController',
                 'action' => 'rating'
+            ],
+            'ratingplayers' =>[
+                'controller' => 'RatingController',
+                'action' => 'ratingplayers'
             ]
         ];
     }
