@@ -24,7 +24,7 @@ class UserMapper{
             return 'Error: ' . $e->getMessage();
         }
     }
-    public function getUser(string $email):User {
+    public function getUser(string $email): ?User {
         try {
             $stmt = $this->database->connect()->prepare('SELECT * FROM Users WHERE email = :email;');
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
