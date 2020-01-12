@@ -14,9 +14,11 @@ class RatingController extends AppController{
         $Rating = null;
 
         if($this->isPost()){
-            $rating = 5;//$_POST['rating'];
+            $rating = real_escape_string($_POST['ratedIndex']);
+            $rating++;
+
             $id_player = 1; //$_POST['id_player'];
-            $id = 1; //$_POST['id'];
+            $id = $_POST['uID'];
             $Rating = $mapper->getRating($rating, $id_player, $id);
 
             if(!$Rating){

@@ -50,19 +50,19 @@
     <div class="flex site-bar">
         <div class="cards" id="c0"></div>
         <div class="con">
-            <span name="rating" class="star-value" type="text">0</span>
-            <i class="fa fa-star" id="s1"></i>
-            <i class="fa fa-star" id="s2"></i>
-            <i class="fa fa-star" id="s3"></i>
-            <i class="fa fa-star" id="s4"></i>
-            <i class="fa fa-star" id="s5"></i>
-            <i class="fa fa-star" id="s6"></i>
-            <i class="fa fa-star" id="s7"></i>
-            <i class="fa fa-star" id="s8"></i>
-            <i class="fa fa-star" id="s9"></i>
-            <i class="fa fa-star" id="s10"></i>
+            <i class="fa fa-star" data-index="0"></i>
+            <i class="fa fa-star" data-index="1"></i>
+            <i class="fa fa-star" data-index="2"></i>
+            <i class="fa fa-star" data-index="3"></i>
+            <i class="fa fa-star" data-index="4"></i>
+            <i class="fa fa-star" data-index="5"></i>
+            <i class="fa fa-star" data-index="6"></i>
+            <i class="fa fa-star" data-index="7"></i>
+            <i class="fa fa-star" data-index="8"></i>
+            <i class="fa fa-star" data-index="9"></i>
         </div>
         <div class="rate"><span class="ocena">0/10</span></div>
+        <?php echo round($avg, 2) ?>
     </div>
 </div>
 
