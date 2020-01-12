@@ -1,5 +1,6 @@
 <?php
 require_once 'controller/SecurityController.php';
+require_once 'controller/RatingController.php';
 
 class Routing{
     //tablica routes zawiera klucz odpowiadajacy stronie
@@ -32,10 +33,6 @@ class Routing{
             'settings' => [
                 'controller' => 'SecurityController',
                 'action' => 'settings'
-            ],
-            'rating' =>[
-                'controller' => 'SecurityController',
-                'action' => 'rating'
             ],
             'ratingplayers' =>[
                 'controller' => 'RatingController',

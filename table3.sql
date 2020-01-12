@@ -47,14 +47,14 @@ CREATE TABLE Player(
 INSERT INTO Player (id_player, name, surname, id_team) VALUES (1, 'Lionel', 'Messi', 1), (2, 'Cristiano', 'Ronaldo', 2), (3, 'Mohamed', 'Salah', 12);
 
 CREATE TABLE Rating(
-    id_star int(11) AUTO_INCREMENT,
-    id_player int(11),
-    id int(11),
-    rating int(11),
+    id_star int(11) NOT NULL AUTO_INCREMENT,
+    id_player int(11) NOT NULL,
+    id int(11) NOT NULL,
+    rating int(11) NOT NULL,
     PRIMARY KEY (id_star),
     KEY ID_Player (id_player),
     CONSTRAINT ID_Player FOREIGN KEY (id_player) REFERENCES Player(id_player),
     KEY id (id),
     CONSTRAINT id FOREIGN KEY (id) REFERENCES Users(id)
-);
+)AUTO_INCREMENT=1;
 INSERT INTO Rating (id_star, id_player, id, rating) VALUES (1, 1, 1, 5);
