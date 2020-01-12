@@ -21,6 +21,7 @@
         <span class="navbar-toggler-icon" href="#"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <?php if(isset($_SESSION['id']))?>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="http://localhost:8000/?page=home">TOP 100 <span class="sr-only">(current)</span></a>
@@ -47,6 +48,21 @@
 <!--CONTENT -->
 <div class="page-wraper-container">
     <div class="flex site-bar">
+        <div class="cards" id="c0"></div>
+        <div class="con">
+            <span name="rating" class="star-value" type="text">0</span>
+            <i class="fa fa-star" id="s1"></i>
+            <i class="fa fa-star" id="s2"></i>
+            <i class="fa fa-star" id="s3"></i>
+            <i class="fa fa-star" id="s4"></i>
+            <i class="fa fa-star" id="s5"></i>
+            <i class="fa fa-star" id="s6"></i>
+            <i class="fa fa-star" id="s7"></i>
+            <i class="fa fa-star" id="s8"></i>
+            <i class="fa fa-star" id="s9"></i>
+            <i class="fa fa-star" id="s10"></i>
+        </div>
+        <div class="rate"><span class="ocena">0/10</span></div>
     </div>
 </div>
 
@@ -56,5 +72,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" href="#"></script>
 <script src="../../public/js/script.js" href="#"></script>
+<script src="../../public/js/rating.js" href="#"></script>
 </body>
 </html>
