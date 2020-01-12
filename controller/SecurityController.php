@@ -82,9 +82,6 @@ class SecurityController extends AppController{
     public function player(){
         $this->render('player');
     }
-    public function rating(){
-        $this->render('rating');
-    }
     public function settings(){
         $this->render('settings');
     }

@@ -11,9 +11,9 @@ class RatingMapper{
     public function addRating(int $id_player, int $id, int $rating){
         try{
             $stmt = $this->database->connect()->prepare('INSERT INTO Rating (id_player, id, rating) VALUES (:id_player, :id, :rating);');
-            $stmt->bindParam(':id_player', $id_player, PDO::PARAM_INT);
-            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-            $stmt->bindParam(':rating', $rating, PDO::PARAM_INT);
+            $stmt->bindParam(':id_player', $id_player, PDO::PARAM_STR);
+            $stmt->bindParam(':id', $id, PDO::PARAM_STR);
+            $stmt->bindParam(':rating', $rating, PDO::PARAM_STR);
             $stmt->execute();
             $Rating = $stmt->fetch(PDO::FETCH_ASSOC);
             return 'Rating added';
@@ -21,12 +21,12 @@ class RatingMapper{
             return 'Error: ' .$e->getMessage();
         }
     }
-    public function getRating(int $rating, int $id_player, int $id): ?Rating{
+    public function getRating(int $id_player, int $id, int $rating): ?Rating {
         try{
             $stmt = $this->database->connect()->prepare('SELECT id_star FROM Rating, Users, Player WHERE Player.id_player = :id_player AND Player.id = :id');
-            $stmt->bindParam(':id_player', $id_player, PDO::PARAM_INT);
-            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-            $stmt->bindParam(':rating', $rating, PDO::PARAM_INT);
+            $stmt->bindParam(':id_player', $id_player, PDO::PARAM_STR);
+            $stmt->bindParam(':id', $id, PDO::PARAM_STR);
+            $stmt->bindParam(':rating', $rating, PDO::PARAM_STR);
             $stmt->execute();
 
             $Rating = $stmt->fetch(PDO::FETCH_ASSOC);

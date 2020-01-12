@@ -14,20 +14,22 @@ class RatingController extends AppController{
         $Rating = null;
 
         if($this->isPost()){
-            $rating = real_escape_string($_POST['ratedIndex']);
-            $rating++;
+            if(isset($_POST['save'])) {
+                $id = $_POST['uID'];
+                $rating = $_POST['ratedIndex'];
+                $rating++;
+                $id_player = 1; //$_POST['id_player'];
 
-            $id_player = 1; //$_POST['id_player'];
-            $id = $_POST['uID'];
-            $Rating = $mapper->getRating($rating, $id_player, $id);
+                $Rating = $mapper->addRating($id_player, $id, $rating);
 
-            if(!$Rating){
-                $mapper->addRating($_POST['id_player'], $_POST['id'], $_POST['rating']);
-                return $this->render('rating', ['messages' => ['Done']]);
-            }
-            else{
-                return $this->render('rating', ['You have marked this player earlier.']);
+                if (!$Rating) {
+                    $mapper->addRating($_POST['id_player'], $_POST['id'], $_POST['rating']);
+                    return $this->render('ratingplayers', ['messages' => ['Done']]);
+                } else {
+                    return $this->render('ratingplayers', ['You have marked this player earlier.']);
+                }
             }
         }
+        $this->render('ratingplayers');
     }
 }
