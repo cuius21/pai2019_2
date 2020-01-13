@@ -9,11 +9,11 @@ class SecurityController extends AppController{
     }
     public function login(){
         //$user = new User('alek@gmail.com', 'admin', 'Juzio', 'Parowka');
-
         $mapper = new UserMapper();
         $user = null;
 
         if ($this->isPost()) {
+            session_start();
 
             $email = $_POST['email'];
             $password = $_POST['password'];
@@ -27,6 +27,8 @@ class SecurityController extends AppController{
                 return $this->render('login', ['messages' => ['Wrong password!']]);
             }
 
+            $_SESSION['email'] = $user->getEmail();
+            $_SESSION['id'] = $user->getId();
             $url = "http://$_SERVER[HTTP_HOST]/";
             header("Location: {$url}?page=home");
         }
@@ -69,11 +71,12 @@ class SecurityController extends AppController{
             }
             //ADD USER TO DATABASE
             $mapper->addUser($_POST['name'], $_POST['surname'], $_POST['email'], ($_POST['password']));
-            return $this->render('home', ['messages' => ['Your account has been registered!']]);
+            return $this->render('register', ['messages' => ['Your account has been registered!']]);
         }
         $this->render('register');
     }
     public function home(){
+
         $this->render('home');
     }
     public function team(){

@@ -1,4 +1,4 @@
-var ratedIndex = -1, uID = 2;
+var ratedIndex = -1, uID = x;
 
 $(document).ready(function () {
     resetStarColors();

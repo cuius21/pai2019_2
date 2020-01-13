@@ -1,7 +1,9 @@
 <?php
 
 require_once 'AppController.php';
+require_once 'SecurityController.php';
 require_once __DIR__.'/../model/User.php';
+require_once __DIR__.'/../model/UserMapper.php';
 require_once __DIR__.'/../model/Rating.php';
 require_once __DIR__.'/../model/RatingMapper.php';
 
@@ -12,7 +14,7 @@ class RatingController extends AppController{
     public function ratingplayers(){
         $mapper = new RatingMapper();
         $Rating = null;
-
+        $mapper2 = new UserMapper();
         if($this->isPost()){
             if(isset($_POST['save'])) {
                 $id = $_POST['uID'];
