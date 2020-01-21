@@ -1,0 +1,210 @@
+@background: transparent linear-gradient(180deg, #382930 0%, #47393F 46%, #382930 72%, #7A7074 100%) 0% 0% no-repeat padding-box;
+@zielony: #1A967F;
+
+//Social Buttons
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+//
+
+
+body{
+  height: 100%;
+  background: @background;
+}
+.navbar-expand-lg{
+  background: transparent !important;
+  height: 8vh;
+  border-bottom: 1px solid @zielony;
+  .navbar-brand{
+    background: url("../assets/Logo2.svg") no-repeat left;
+    background-size: contain;
+    height: 7vh;
+    width: 10%;
+  }
+  .navbar-toggler{
+    border: none;
+    margin-top: -10px;
+  }
+  .navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+  }
+  .mr-auto{
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    > li{
+      padding-right: 20px;
+      > a{ color: #fff !important; font-family: Arial; font-weight: bold; &:hover{color: @zielony !important;}}
+    }
+  }
+  .form-control{
+    background-color: transparent;
+    border: 1px solid @zielony;
+  }
+  .btn-outline-success{
+    background-color: @zielony;
+    color: #fff;
+    border: none;
+    &:hover{ background-color: #06523B;}
+  }
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #06523B;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.page-wraper-container{
+  width: 100%;
+  .site-bar {
+    text-align: center;
+    height: 92vh;
+    .profile1{
+      padding-top: 50px;
+      .name{
+        font-family: Arial;
+        font-size: 100px;
+        color: @zielony;
+        .fa-user{
+          margin-right: 50px;
+          font-size: 80px;
+          &::before{
+          }
+        }
+      }
+      .ratesinfo{
+        text-align: left;
+        color: @zielony;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .info{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: @zielony;
+        font-family: Arial;
+        display: inline-block;
+        padding-left: 50px;
+      }
+      .comparison{
+        display: flex;
+        height: 324px;
+        overflow: hidden;
+        float: right;
+        .teams{
+          list-style-type: none;
+          background-color: @zielony;
+          overflow: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 0.5rem;
+          padding-left: 0;
+          .team{
+            padding: 5px;
+            &:hover{ background-color: #06523B;}
+          }
+          .team2{
+            padding: 5px;
+            &:hover{ background-color: #06523B;}
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .page-wraper-container{
+    .site-bar{
+      height: 92vh;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .page-wraper-container{
+    .site-bar {
+      height: auto;
+      .profile1{
+        .name{
+          .fa-user{
+
+            &::before{
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+}
+@media(max-width: 767px) {
+  .navbar-expand-lg{
+    .navbar-brand{
+      width: 47.8px;
+    }
+    .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  }
+  .block{
+    width: 80%;
+  }
+  .page-wraper-container{
+    .site-bar{
+      height: auto;
+    }
+  }
+
+}
+@media (max-width: 576px) {
+  .page-wraper-container{
+    height: auto;
+    .site-bar{
+      .profile1{
+        .info{
+          padding-left: 0;
+        }
+        .comparison{
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

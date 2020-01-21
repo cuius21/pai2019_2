@@ -18,3 +18,14 @@ function myFunction() {
         }
     }
 }
+/*
+var cards = ["Messi.png", "Ronaldo.png"];
+var c =[];
+for (var i=0; i<9; i++){
+    c[i] = document.getElementById('c'+i);
+    var image = "url(../../assets/players/" + cards[i] + ")";
+    c[i].css({'background': image, 'background-size': 'contain', 'background-repeat': 'no-repeat',
+    'background-position': 'center'});
+
+}
+*/

@@ -1,0 +1,359 @@
+@background: transparent linear-gradient(180deg, #382930 0%, #47393F 46%, #382930 72%, #7A7074 100%) 0% 0% no-repeat padding-box;
+@zielony: #1A967F;
+
+//Social Buttons
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+//
+
+
+body{
+  height: 100%;
+  background: @background;
+}
+.navbar-expand-lg{
+  background: transparent !important;
+  height: 8vh;
+  border-bottom: 1px solid @zielony;
+  .navbar-brand{
+    background: url("../assets/Logo2.svg") no-repeat left;
+    background-size: contain;
+    height: 7vh;
+    width: 10%;
+  }
+  .navbar-toggler{
+    border: none;
+    margin-top: -10px;
+  }
+  .navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+  }
+  .mr-auto{
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    > li{
+      padding-right: 20px;
+      > a{ color: #fff !important; font-family: Arial; font-weight: bold; &:hover{color: @zielony !important;}}
+    }
+  }
+  .form-control{
+    background-color: transparent;
+    border: 1px solid @zielony;
+  }
+  .btn-outline-success{
+    background-color: @zielony;
+    color: #fff;
+    border: none;
+    &:hover{ background-color: #06523B;}
+  }
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #06523B;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.page-wraper-container{
+  width: 100%;
+  margin: 0;
+  .site-bar{
+    display: flex;
+    height: 92vh;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    .col-md-4{ flex-basis: 32%;}
+    .column-top100{
+      background-color: @zielony;
+      display: inline-block;
+      min-height: 100px;
+      width: 300px;
+      overflow: auto;
+      margin-right: 40px;
+      padding-left: 0;
+      padding-right: 0;
+      .name{
+        display: flex;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        overflow: hidden;
+        height: 244px;
+        span{
+          font-family: Arial;
+          font-weight: bold;
+          color: #fff;
+        }
+        .surnames{
+          overflow: auto;
+          margin-top: 15px;
+          margin-bottom: 0;
+          padding-left: 20px;
+          width: 100%;
+          .s{
+            list-style-type: none;
+            padding: 10px;
+            background-color: rgba(80, 0, 0, 0.3);
+            margin-bottom: 5px;
+            &:hover{
+              background-color: rgba(0, 0, 0, 0.5);
+              color: #fff;
+            > a{text-decoration: none; color: #fff;}
+            }
+            a{
+              color: #000;
+              font-family: Arial;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .column-laliga{
+      background-color: @zielony;
+      display: inline-block;
+      min-height: 100px;
+      width: 300px;
+      overflow: auto;
+      margin-right: 40px;
+      padding-left: 0;
+      padding-right: 0;
+      .name{
+        display: flex;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        overflow: hidden;
+        height: 244px;
+        span{
+          font-family: Arial;
+          font-weight: bold;
+          color: #fff;
+        }
+        .surnames{
+          overflow: auto;
+          margin-top: 15px;
+          margin-bottom: 0;
+          padding-left: 20px;
+          width: 100%;
+          .s{
+            list-style-type: none;
+            padding: 10px;
+            background-color: rgba(80, 0, 0, 0.3);
+            margin-bottom: 5px;
+            &:hover{
+              background-color: rgba(0, 0, 0, 0.5);
+              color: #fff;
+              > a{text-decoration: none; color: #fff;}
+            }
+            a{
+              color: #000;
+              font-family: Arial;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .column-premier{
+      background-color: @zielony;
+      display: inline-block;
+      min-height: 100px;
+      width: 300px;
+      margin-right: 0;
+      overflow: auto;
+      padding-left: 0;
+      padding-right: 0;
+      .name{
+        display: flex;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        overflow: hidden;
+        height: 244px;
+        span{
+          font-family: Arial;
+          font-weight: bold;
+          color: #fff;
+        }
+        .surnames{
+          overflow: auto;
+          margin-top: 15px;
+          margin-bottom: 0;
+          padding-left: 20px;
+          width: 100%;
+          .s{
+            list-style-type: none;
+            padding: 10px;
+            background-color: rgba(80, 0, 0, 0.3);
+            margin-bottom: 5px;
+            &:hover{
+              background-color: rgba(0, 0, 0, 0.5);
+              color: #fff;
+              > a{text-decoration: none; color: #fff;}
+            }
+            a{
+              color: #000;
+              font-family: Arial;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-wraper-container{
+    .site-bar{
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      height: 92vh;
+      width: 80%;
+      overflow: hidden;
+      text-align: center;
+      .column-top100{
+        background-color: @zielony;
+        display: inline-block;
+        min-height: 100px;
+        width: 30%;
+        overflow: auto;
+        max-width: 576px;
+        margin-right: 20px;
+      }
+      .column-laliga{
+        background-color: @zielony;
+        display: inline-block;
+        min-height: 100px;
+        width: 30%;
+        overflow: auto;
+        max-width: 576px;
+        margin-right: 20px;
+      }
+      .column-premier{
+        background-color: @zielony;
+        display: inline-block;
+        min-height: 100px;
+        overflow: auto;
+        width: 30%;
+        max-width: 576px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-4{ flex-basis: 30% !important;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  .page-wraper-container{
+    .site-bar{
+      display: flex;
+      height: 92vh;
+      overflow: hidden;
+      text-align: center;
+      width: 80%;
+      .column-top100{
+        background-color: @zielony;
+        display: inline-block;
+        overflow: auto;
+        min-height: 100px;
+        width: 30%;
+        margin-right: 10px;
+      }
+      .column-laliga {
+        background-color: @zielony;
+        display: inline-block;
+        overflow: auto;
+        min-height: 100px;
+        width: 30%;
+        margin-right: 10px;
+      }
+      .column-premier{
+        background-color: @zielony;
+        display: inline-block;
+        overflow: auto;
+        min-height: 100px;
+        width: 30%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  .navbar-expand-lg{
+    .navbar-brand{
+      width: 47.8px;
+    }
+    .navbar-collapse{ z-index: 100; background: @background; border-bottom: 1px solid @zielony;}
+  }
+  .page-wraper-container{
+    .site-bar{
+      display: block;
+      height: 100%;
+      text-align: center;
+      .column-top100{
+        background-color: @zielony;
+        min-height: 100px;
+        width: 90%;
+        margin-right: 0;
+      }
+      .column-laliga{
+        background-color: @zielony;
+        min-height: 100px;
+        width: 90%;
+        margin-right: 0;
+      }
+      .column-premier{
+        background-color: @zielony;
+        min-height: 100px;
+        width: 90%;
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+}
