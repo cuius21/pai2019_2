@@ -16,7 +16,7 @@
 <body>
 <!--HEADER -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="http://localhost:8000/?page=home"></a>
+    <a class="navbar-brand" href="http://localhost:8000/?page=top100"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,7 +24,7 @@
         <?php if(isset($_SESSION['id']))?>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="http://localhost:8000/?page=home">TOP 100 <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="http://localhost:8000/?page=top100">TOP 100 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="http://localhost:8000/?page=team">TEAM</a>
@@ -52,7 +52,7 @@
             <div class="name" id="A"><span>A</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Alba Jordi</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=4">Aubameyang Pierre-Emerick</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Asensio Marco</a>
@@ -121,10 +121,10 @@
             <div class="name" id="D"><span>D</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=5">Depay Memphis</a>
                     </li>
                     <li class="s">
-                        <a class="name-link" href="#">Benzema Karim</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=12">Dijk Virgil</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Bale Gareth</a>
@@ -221,7 +221,7 @@
             <div class="name" id="H"><span>H</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=6">Hazard Eden</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Benzema Karim</a>
@@ -292,10 +292,10 @@
             <div class="name" id="K"><span>K</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=7">Kante NGolo</a>
                     </li>
                     <li class="s">
-                        <a class="name-link" href="#">Benzema Karim</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=8">Koke Jorge</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Bale Gareth</a>
@@ -317,7 +317,7 @@
             <div class="name" id="L"><span>L</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=9">Lewandowski Robert</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Benzema Karim</a>
@@ -342,7 +342,7 @@
             <div class="name" id="M"><span>M</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=1">Messi Lionel</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Benzema Karim</a>
@@ -367,7 +367,7 @@
             <div class="name" id="N"><span>N</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=10">Neymar Jr</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Benzema Karim</a>
@@ -417,7 +417,7 @@
             <div class="name" id="P"><span>P</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=11">Pogba Paul</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Benzema Karim</a>
@@ -444,7 +444,7 @@
             <div class="name" id="R"><span>R</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Alba Jordi</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=2">Ronaldo Cristiano</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Asensio Marco</a>
@@ -463,7 +463,7 @@
             <div class="name" id="S"><span>S</span>
                 <ul class="surnames">
                     <li class="s">
-                        <a class="name-link" href="#">Busquets Sergio</a>
+                        <a class="name-link" href="?page=ratingplayers&id_player=3">Salah Mohamed</a>
                     </li>
                     <li class="s">
                         <a class="name-link" href="#">Benzema Karim</a>

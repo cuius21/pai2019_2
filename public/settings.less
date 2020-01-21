@@ -72,17 +72,100 @@ body{
     &:hover{ background-color: #06523B;}
   }
 }
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #06523B;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
 .page-wraper-container{
   width: 100%;
   .site-bar {
-    display: block;
     text-align: center;
+    height: 92vh;
+    .profile1{
+      padding-top: 50px;
+      .name{
+        font-family: Arial;
+        font-size: 100px;
+        color: @zielony;
+        .fa-user{
+          margin-right: 50px;
+          font-size: 80px;
+          &::before{
+          }
+        }
+      }
+      .ratesinfo{
+        text-align: left;
+        color: @zielony;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .info{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: @zielony;
+        font-family: Arial;
+        display: inline-block;
+        padding-left: 50px;
+      }
+      .comparison{
+        display: flex;
+        height: 324px;
+        overflow: hidden;
+        float: right;
+        .teams{
+          list-style-type: none;
+          background-color: @zielony;
+          overflow: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 0.5rem;
+          padding-left: 0;
+          .team{
+            padding: 5px;
+            &:hover{ background-color: #06523B;}
+          }
+          .team2{
+            padding: 5px;
+            &:hover{ background-color: #06523B;}
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1200px) {
   .page-wraper-container{
     .site-bar{
       height: 92vh;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .page-wraper-container{
+    .site-bar {
+      height: auto;
+      .profile1{
+        .name{
+          .fa-user{
+
+            &::before{
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -101,7 +184,27 @@ body{
   .block{
     width: 80%;
   }
+  .page-wraper-container{
+    .site-bar{
+      height: auto;
+    }
+  }
 
 }
 @media (max-width: 576px) {
+  .page-wraper-container{
+    height: auto;
+    .site-bar{
+      .profile1{
+        .info{
+          padding-left: 0;
+        }
+        .comparison{
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
 }

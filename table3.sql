@@ -44,7 +44,7 @@ CREATE TABLE Player(
     KEY ID_Team(id_team),
     CONSTRAINT ID_Team FOREIGN KEY(id_team) REFERENCES Team(id_team)
 );
-INSERT INTO Player (id_player, name, surname, id_team) VALUES (1, 'Lionel', 'Messi', 1), (2, 'Cristiano', 'Ronaldo', 2), (3, 'Mohamed', 'Salah', 12);
+INSERT INTO Player (id_player, name, surname, id_team) VALUES (1, 'Lionel', 'Messi', 1), (2, 'Cristiano', 'Ronaldo', 3), (3, 'Mohamed', 'Salah', 12), (4, 'Pierre-Emerick', 'Aubameyang', 8), (5, 'Memphis', 'Depay', 6), (6, 'Eden', 'Hazard', 2), (7, 'NGolo', 'Kante', 9), (8, 'Jorge', 'Koke', 7), (9, 'Robert', 'Lewandowski', 14), (10, 'Neymar', 'Junior', 4), (11, 'Paul', 'Pogba', 10), (12, 'Virgil', 'van Dijk', 12);
 
 CREATE TABLE Rating(
     id_star int(11) NOT NULL AUTO_INCREMENT,

@@ -30,7 +30,7 @@ class SecurityController extends AppController{
             $_SESSION['email'] = $user->getEmail();
             $_SESSION['id'] = $user->getId();
             $url = "http://$_SERVER[HTTP_HOST]/";
-            header("Location: {$url}?page=home");
+            header("Location: {$url}?page=top100");
         }
 
         $this->render('login');
@@ -75,17 +75,10 @@ class SecurityController extends AppController{
         }
         $this->render('register');
     }
-    public function home(){
-
-        $this->render('home');
-    }
     public function team(){
         $this->render('team');
     }
     public function player(){
         $this->render('player');
-    }
-    public function settings(){
-        $this->render('settings');
     }
 }

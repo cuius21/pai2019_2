@@ -50,6 +50,19 @@ class UserMapper{
             die();
         }
     }
+    public function getDetails(int $id) {
+        try{
+            $stmt = $this->database->connect()->prepare('SELECT Users.name FROM Users WHERE id = :id;');
+            $stmt->bindParam(':id', $id, PDO::PARAM_STR);
+            $stmt->execute();
+            $User = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $User;
+
+        }catch (PDOException $e){
+            return 'Error: ' . $e->getMessage();
+        }
+    }
     public function delete(int $id){
         try {
             $stmt = $this->database->connect()->prepare('DELETE FROM Users WHERE id = :id;');

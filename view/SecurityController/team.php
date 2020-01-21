@@ -16,7 +16,7 @@
 <body>
 <!--HEADER -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="http://localhost:8000/?page=home" href="#"></a>
+    <a class="navbar-brand" href="http://localhost:8000/?page=top100"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" href="#"></span>
     </button>
@@ -24,7 +24,7 @@
         <?php if(isset($_SESSION['id']))?>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="http://localhost:8000/?page=home">TOP 100 <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="http://localhost:8000/?page=top100">TOP 100 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">TEAM</a>
@@ -48,36 +48,36 @@
 <!--CONTENT -->
 <div class="page-wraper-container">
     <div class="flex site-bar">
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t1" href="#"></a><div id="team_name">FC Barcelona</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t2" href="#"></a><div id="team_name">Real Madrid</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t3" href="#"></a><div id="team_name">Juventus FC</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t4" href="#"></a><div id="team_name">PSG</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t5" href="#"></a><div id="team_name">LOSC</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t6" href="#"></a><div id="team_name">Olympique Lyonnais</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t7" href="#"></a><div id="team_name">Atletico Madrid</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t8" href="#"></a><div id="team_name">Valencia</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t9" href="#"></a><div id="team_name">Sevilla</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t10" href="#"></a><div id="team_name">Real Sociedad</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t11" href="#"></a><div id="team_name">Arsenal FC</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t12" href="#"></a><div id="team_name">Chelsea FC</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t13" href="#"></a><div id="team_name">Manchester United</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t14" href="#"></a><div id="team_name">Manchester City</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t15" href="#"></a><div id="team_name">Liverpool FC</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t16" href="#"></a><div id="team_name">Tottenham Hotspur</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t17" href="#"></a><div id="team_name">Bayern Munchen</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t18" href="#"></a><div id="team_name">Borussia Dortmund</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t19" href="#"></a><div id="team_name">AC Milan</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t20" href="#"></a><div id="team_name">FC Internazionale Milano</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t21" href="#"></a><div id="team_name">AS Roma</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t22" href="#"></a><div id="team_name">SSC Napoli</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t23" href="#"></a><div id="team_name">Olympique de Marseille</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t24" href="#"></a><div id="team_name">AS Monaco</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t25" href="#"></a><div id="team_name">Athletic Bilbao</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t26" href="#"></a><div id="team_name">Villarreal</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t27" href="#"></a><div id="team_name">Leicester City FC</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t28" href="#"></a><div id="team_name">Bayer 04 Leverkusen</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t29" href="#"></a><div id="team_name">Borussia Mönchengladbach</div></div>
-        <div class="col-12 col-md-4 col-lg-2  block"><a class="t30" href="#"></a><div id="team_name">FC Schalke 04</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t1" href="?page=teamsplayers&id_team=1"></a><div id="team_name">FC Barcelona</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t2" href="?page=teamsplayers&id_team=2"></a><div id="team_name">Real Madrid</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t3" href="?page=teamsplayers&id_team=3"></a><div id="team_name">Juventus FC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t4" href="?page=teamsplayers&id_team=4"></a><div id="team_name">PSG</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t5" href="?page=teamsplayers&id_team=5"></a><div id="team_name">LOSC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t6" href="?page=teamsplayers&id_team=6"></a><div id="team_name">Olympique Lyonnais</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t7" href="?page=teamsplayers&id_team=7"></a><div id="team_name">Atletico Madrid</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t8" href="?page=teamsplayers&id_team=28"></a><div id="team_name">Valencia</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t9" href="?page=teamsplayers&id_team=29"></a><div id="team_name">Sevilla</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t10" href="?page=teamsplayers&id_team=30"></a><div id="team_name">Real Sociedad</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t11" href="?page=teamsplayers&id_team=8"></a><div id="team_name">Arsenal FC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t12" href="?page=teamsplayers&id_team=9"></a><div id="team_name">Chelsea FC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t13" href="?page=teamsplayers&id_team=10"></a><div id="team_name">Manchester United</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t14" href="?page=teamsplayers&id_team=11"></a><div id="team_name">Manchester City</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t15" href="?page=teamsplayers&id_team=12"></a><div id="team_name">Liverpool FC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t16" href="?page=teamsplayers&id_team=13"></a><div id="team_name">Tottenham Hotspur</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t17" href="?page=teamsplayers&id_team=14"></a><div id="team_name">Bayern Munchen</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t18" href="?page=teamsplayers&id_team=15"></a><div id="team_name">Borussia Dortmund</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t19" href="?page=teamsplayers&id_team=16"></a><div id="team_name">AC Milan</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t20" href="?page=teamsplayers&id_team=17"></a><div id="team_name">FC Internazionale Milano</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t21" href="?page=teamsplayers&id_team=18"></a><div id="team_name">AS Roma</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t22" href="?page=teamsplayers&id_team=19"></a><div id="team_name">SSC Napoli</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t23" href="?page=teamsplayers&id_team=20"></a><div id="team_name">Olympique de Marseille</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t24" href="?page=teamsplayers&id_team=21"></a><div id="team_name">AS Monaco</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t25" href="?page=teamsplayers&id_team=22"></a><div id="team_name">Athletic Bilbao</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t26" href="?page=teamsplayers&id_team=23"></a><div id="team_name">Villarreal</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t27" href="?page=teamsplayers&id_team=24"></a><div id="team_name">Leicester City FC</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t28" href="?page=teamsplayers&id_team=25"></a><div id="team_name">Bayer 04 Leverkusen</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t29" href="?page=teamsplayers&id_team=26"></a><div id="team_name">Borussia Mönchengladbach</div></div>
+        <div class="col-12 col-md-4 col-lg-2  block"><a class="t30" href="?page=teamsplayers&id_team=27"></a><div id="team_name">FC Schalke 04</div></div>
     </div>
 </div>
 

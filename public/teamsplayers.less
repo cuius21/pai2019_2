@@ -79,29 +79,32 @@ body{
     height: 92vh;
     text-align: center;
     padding-top: 150px;
-    .cards{
-      img{
-        height: 100%;
-      }
-    }
-    .con{
-      .star-value{ display: none;}
-      display: inline-block;
-      margin: auto;
-      .fa-star{
-        font-size: 55px;
-        color: #000;
-        &:before{
-          margin-left: -24px;
+    .name{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      .surnames{
+        .s{
+          text-align: left;
+          font-family: Arial;
+          font-size: 30px;
+          background-color: @zielony;
+          width: 60%;
+          border-radius: 2.25rem;
+          margin-bottom: 15px;
+          &:hover{
+            background-color: #06523B;
+            color: #fff;
+          }
+          a{
+            color: #000;
+            text-decoration: none;
+            padding: 10px;
+            &:visited{
+            color: #000;
+            }
+          }
         }
-      }
-    }
-    .rate{
-      display: inline-block;
-      .ocena{
-        font-family: Arial;
-        color: #fff;
-        font-size: 55px;
       }
     }
   }
@@ -109,19 +112,12 @@ body{
 @media (min-width: 1200px) {
   .page-wraper-container{
     .site-bar{
-      padding-top: 0;
-      .cards{
-        height: 700px;
-      }
     }
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
   .page-wraper-container{
     .site-bar{
-      .cards{
-        height: 500px;
-      }
     }
   }
 }
@@ -133,8 +129,10 @@ body{
   .page-wraper-container{
     .site-bar {
       padding-top: 150px;
-      .cards {
-        height: 400px;
+      .name{
+        .surnames{
+          width: 100%;
+        }
       }
     }
   }
@@ -149,8 +147,12 @@ body{
   .page-wraper-container{
     .site-bar {
       padding-top: 150px;
-      .cards {
-        height: 400px;
+      .name{
+        .surnames{
+          .s{
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -158,20 +160,12 @@ body{
 @media (max-width: 576px) {
   .page-wraper-container{
     .site-bar{
-      .cards{
-        height: 200px;
-      }
-      .con{
-        .fa-star{
-          font-size: 20px;
-          width: 20px;
-          padding: 10px;
-          padding-left: 0;
-          padding-right: 0;
+      .name{
+        .surnames{
+          .s{
+            font-size: 20px;
+          }
         }
-      }
-      .rate{
-        .ocena{ font-size: 20px;}
       }
     }
   }
@@ -180,9 +174,6 @@ body{
   .page-wraper-container{
     .site-bar{
       padding-top: 50px;
-      .con{
-        .fa-star:before{margin-left: -6px;}
-      }
     }
   }
 }
